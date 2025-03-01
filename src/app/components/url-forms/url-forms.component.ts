@@ -40,6 +40,6 @@ export class UrlFormsComponent {
   }
 
   public navigateUrlList(): void {
-    this.router.navigate(['/minifiedUrls']);
+    this.router.navigate(['/minified-urls']);
   }
 }

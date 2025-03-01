@@ -8,7 +8,7 @@ export const routes: Routes = [
     component: UrlFormsComponent,
   },
   {
-    path: 'minifiedUrls',
+    path: 'minified-urls',
     component: UrlTableListComponent,
   },
 ];
