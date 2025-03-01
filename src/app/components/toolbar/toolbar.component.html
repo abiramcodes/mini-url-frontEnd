@@ -1,1 +1,5 @@
-<p>toolbar works!</p>
+<mat-toolbar>
+  <ng-content select="[toolbar-start]" />
+  <span class="toolbar-spacer"></span>
+  <ng-content select="[toolbar-end]" />
+</mat-toolbar>

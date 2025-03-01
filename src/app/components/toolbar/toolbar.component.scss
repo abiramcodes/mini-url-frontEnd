@@ -1,0 +1,10 @@
+:host {
+  .mat-toolbar {
+    top: 0;
+    position: absolute;
+  }
+
+  .toolbar-spacer {
+    flex: 1 1 auto;
+  }
+}

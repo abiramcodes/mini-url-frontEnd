@@ -1,0 +1,14 @@
+:host {
+  --toolbar-padding-top: calc(64px + 14px);
+  .mat-mdc-header-row {
+    background: var(--mat-sys-primary);
+    color: var(--mat-sys-surface);
+  }
+
+  .table-list {
+    &-container {
+      padding-top: var(--toolbar-padding-top);
+      margin-inline: 2rem;
+    }
+  }
+}

@@ -1,4 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+* {
+  font-family: Montserrat;
+}
+
+html {
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$azure-palette,
+        tertiary: mat.$orange-palette,
+        theme-type: light,
+      ),
+      density: 0,
+      typography: Montserrat,
+    )
+  );
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin-block-start: 0.5rem;
+  margin-block-end: 1rem;
+}
+
+.toolbar-header {
+  font-size: large !important;
+  font-weight: bold !important;
+  color: var(--mat-sys-primary);
+}
