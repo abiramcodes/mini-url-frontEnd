@@ -1,3 +1,31 @@
-<p>url-forms works!</p>
+<app-toolbar>
+  <h1 toolbar-start class="toolbar-header">Mini URL</h1>
+  <button mat-flat-button (click)="navigateUrlList()" toolbar-end>
+    Minified URL's <mat-icon>link</mat-icon>
+  </button>
+</app-toolbar>
+<div class="url-forms-container">
+  <div class="url-forms-container-header">
+    <h1>Mini URL</h1>
+    <p>Get your <b>minified</b> url</p>
+  </div>
+  <form [formGroup]="urlFormsGroup" class="url-forms-group-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Enter the long link</mat-label>
+      <mat-icon matPrefix>link</mat-icon>
+      <input type="text" matInput formControlName="longUrl" />
+    </mat-form-field>
+  </form>
+  <button
+    mat-raised-button
+    class="url-forms-group-actions-mini"
+    (click)="minifyUrl()"
+  >
+    Minify !
+  </button>
+</div>
 
-<app-url-table-list></app-url-table-list>
+<!-- this table needs a new routing -->
+<!-- <section>
+  <app-url-table-list></app-url-table-list>
+</section> -->
