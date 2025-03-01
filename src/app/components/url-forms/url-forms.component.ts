@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import { UrlTableListComponent } from '../url-table-list/url-table-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import {
