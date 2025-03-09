@@ -4,25 +4,21 @@
 </app-toolbar>
 <div class="table-list-container">
   <table mat-table [dataSource]="dataSource()" class="mat-elevation-z8">
-    <!-- Position Column -->
     <ng-container matColumnDef="index">
       <th mat-header-cell *matHeaderCellDef>S.No</th>
       <td mat-cell *matCellDef="let element; let i = index">{{ i + 1 }}</td>
     </ng-container>
 
-    <!-- Name Column -->
     <ng-container matColumnDef="url">
       <th mat-header-cell *matHeaderCellDef>Url</th>
       <td mat-cell *matCellDef="let element">{{ element.longUrl }}</td>
     </ng-container>
 
-    <!-- Weight Column -->
     <ng-container matColumnDef="miniUrl">
       <th mat-header-cell *matHeaderCellDef>MiniUrl</th>
       <td mat-cell *matCellDef="let element">{{ element.miniUrl }}</td>
     </ng-container>
 
-    <!-- Symbol Column -->
     <ng-container matColumnDef="action">
       <th mat-header-cell *matHeaderCellDef>Action</th>
       <td mat-cell *matCellDef="let element">
