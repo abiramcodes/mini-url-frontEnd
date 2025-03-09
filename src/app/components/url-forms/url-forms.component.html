@@ -4,7 +4,7 @@
     Minified URL's <mat-icon>link</mat-icon>
   </button>
 </app-toolbar>
-<div class="url-forms-container">
+<section class="url-forms-container">
   <div class="url-forms-container-header">
     <h1>Mini URL</h1>
     <p>Get your <b>minified</b> url</p>
@@ -20,12 +20,11 @@
     mat-raised-button
     class="url-forms-group-actions-mini"
     (click)="minifyUrl()"
+    [disabled]="!urlFormsGroup.valid"
   >
     Minify !
   </button>
-</div>
-
-<!-- this table needs a new routing -->
-<!-- <section>
-  <app-url-table-list></app-url-table-list>
-</section> -->
+  @if (minifiedUrl()) {
+  <app-minified-url [minfiedUrl]="minifiedUrl()"></app-minified-url>
+  }
+</section>
